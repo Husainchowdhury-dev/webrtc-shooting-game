@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8" />
+  <title>🔫 WebRTC Shooting Game</title>
+  <style>
+    body { background: #111; margin: 0; overflow: hidden; color: white; text-align: center; }
+    canvas { background: #222; display: block; margin: auto; border: 2px solid #555; }
+    #info { margin-top: 10px; }
+  </style>
+</head>
+<body>
+  <h2>WebRTC Shooting Game 🔥</h2>
+  <canvas id="game" width="800" height="600"></canvas>
+  <div id="info">
+    <span id="score">স্কোর: 0</span> | 
+    <span id="health">হেলথ: 100%</span>
+  </div>
+
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="game.js"></script>
+</body>
+</html>
